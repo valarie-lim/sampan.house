@@ -98,16 +98,13 @@ export default function Home() {
 	  <hr>
 	  <h2>The True Taste of Malaysia</h2>
           <p>From childhood memories to your table—experience the warmth of authentic Malaysian comfort food and modern fusion classics.</p>
-          const message =
-  "Hi Sampan House. I would like to make a general enquiry. Could you please assist me?";
-
-<a
-  href={`https://wa.me/601139818818?text=${encodeURIComponent(message)}`}
-  target="_blank"
-  rel="noreferrer"
->
-  💬 WhatsApp Us
-</a>
+          const message ="Hi Sampan House. I would like to make a general enquiry. Could you please assist me?";
+			<a
+			  href={`https://wa.me/601139818818?text=${encodeURIComponent(message)}`}
+			  target="_blank"
+			  rel="noreferrer">
+			  💬 WhatsApp Us
+			</a>
         </div>
       </section>
 
