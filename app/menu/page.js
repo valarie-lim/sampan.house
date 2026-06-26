@@ -20,9 +20,61 @@ export const metadata = {
 };
 
 export default function Menu() {
+  // Schema JSON-LD Data
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sampan House (舢舨屋)",
+    "image": "https://sampan-house.vercel.app/img/logo-sampan-house.png",
+    "url": "https://sampan-house.vercel.app",
+    "telephone": "+601139818818",
+    "priceRange": "$$",
+    "menu": "https://sampan-house.vercel.app/menu",
+    "servesCuisine": ["Malaysian", "Fusion"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 & 13, Tabuan Stutong Commercial Centre",
+      "addressLocality": "Kuching",
+      "addressRegion": "Sarawak",
+      "postalCode": "93010",
+      "addressCountry": "MY"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "1.520144",
+      "longitude": "110.378668"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "22:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61563174569797",
+      "https://www.instagram.com/sampan.house",
+      "https://www.tiktok.com/@sampan.house"
+    ]
+  };
+
   return (
     <>
       <Header />
+
+      {/* Injecting JSON-LD */}
+      <script
+        id="restaurant-schema"
+	type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* H E R O */}
       <section className="menu-hero-section"></section>
