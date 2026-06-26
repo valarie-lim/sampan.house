@@ -94,10 +94,12 @@ export default function Home() {
       {/* H E R O */}
       <section id="home" className="hero-section">
         <div className="hero-section-content">
-          <h1>The True Taste of Malaysia</h1>
+          <h1>Authentic Malaysian Restaurant in Kuching</h1>
+	  <hr>
+	  <h2>The True Taste of Malaysia</h2>
           <p>From childhood memories to your table—experience the warmth of authentic Malaysian comfort food and modern fusion classics.</p>
           <a
-  href="https://wa.me/60109640097?text=Hi%20Sampan%20House.%20I%20would%20like%20to%20inquire%20about%20your%20event%20space.%0A%0AEvent%20Date%3A%0ANumber%20of%20Guests%3A%0AType%20of%20Event%3A%0A%0AThank%20you."
+  href="https://wa.me/60109640097?text=Hi%20Sampan%20House.%20I%20would%20like%20to%20inquire%20about%20your%20event%20space%20and%20restaurant%20services.%20Thank%20you."
   target="_blank"
   rel="noopener noreferrer"
 >💬 Whatsapp Us</a>
