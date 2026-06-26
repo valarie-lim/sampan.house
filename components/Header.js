@@ -1,49 +1,41 @@
-// app/components/Header.js
-
-"use client"; // Required to use hooks like useState and useEffect
+"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // 1. Import this
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname(); // 2. Initialize it
 
-  // Handle sticky header state cleanly based on window scroll height
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  // 3. Define the active check logic
+  const isActive = (path) => pathname === path;
 
   return (
     <header id="main-header" className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <Link href="/" className="logo-container">
-        <img src="/img/logo-sampan-house.png" alt="Sampan House Restaurant Kuching Logo" className="logo-img" />
+        <img src="/img/logo-sampan-house.png" alt="Sampan House Logo" className="logo-img" />
       </Link>
+      
       <nav>
-        {/* Adds 'open' class based on menu state */}
         <ul className={`navlist ${isMenuOpen ? "open" : ""}`}>
-          <li><Link href="/" className="active-link" onClick={closeMenu}>Home</Link></li>
-          <li><Link href="/about" onClick={closeMenu}>About Us</Link></li>    
-          <li><Link href="/menu" onClick={closeMenu}>Menu</Link></li>
-          <li><Link href="/event" onClick={closeMenu}>Events Space</Link></li>
-          <li><Link href="/contact" onClick={closeMenu}>Contact Us</Link></li>
+          <li><Link href="/" onClick={closeMenu} className={isActive("/") ? "active-link" : ""}>Home</Link></li>
+          <li><Link href="/about" onClick={closeMenu} className={isActive("/about") ? "active-link" : ""}>About Us</Link></li>   
+          <li><Link href="/menu" onClick={closeMenu} className={isActive("/menu") ? "active-link" : ""}>Menu</Link></li>
+          <li><Link href="/event" onClick={closeMenu} className={isActive("/event") ? "active-link" : ""}>Events Space</Link></li>
+          <li><Link href="/contact" onClick={closeMenu} className={isActive("/contact") ? "active-link" : ""}>Contact Us</Link></li>
         </ul>
       </nav>
 
@@ -53,12 +45,7 @@ export default function Header() {
         <a href="https://www.tiktok.com/@sampan.house" target="_blank" rel="noreferrer"><i className="ri-tiktok-fill"></i></a>
       </div>
       
-      {/* Dynamic icon class switches from hamburger to 'X' when open */}
-      <div 
-        className={`bx ${isMenuOpen ? "bx-x" : "bx-menu"}`} 
-        id="menu-icon" 
-        onClick={toggleMenu}
-      ></div>
+      <div className={`bx ${isMenuOpen ? "bx-x" : "bx-menu"}`} id="menu-icon" onClick={toggleMenu}></div>
     </header>
   );
 }
