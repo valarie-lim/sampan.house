@@ -1,5 +1,4 @@
 /*=== GLOBAL & RESET STYLES ===*/
-
 * {
     margin: 0;
     padding: 0;
@@ -65,15 +64,16 @@ h5 {
 }
 h6 {
     font-size: clamp(12px, 2vw, 18px);
-    font-family: "Special Elite", display;
+    font-family: "Special Elite", display !important;
 }
 
 /*=== NAVIGATION MENU & HEADER ===*/
 header {
+
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 99;
+    z-index: 9999;
     width: 100%;
     display: flex;
     align-items: center;
@@ -154,9 +154,11 @@ header {
 }
 .hero-section {
     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url('/img/home-banner.webp') no-repeat center center/cover;
+    min-height: 100vh;
 }
 .about-hero-section {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('/img/about-banner.png') no-repeat center center/cover;
+    min-height: 100vh;
 }
 .menu-hero-section {
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)), url('/img/menu-banner.png') no-repeat center center/cover;
@@ -167,7 +169,7 @@ header {
     min-height: 100vh;
 }
 .contact-hero-section {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('/img/contact-banner.webp') no-repeat center right/cover;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('/img/contact-banner.webp') no-repeat top center/cover;
     min-height: 100vh;
 }
 .hero-section-content h1,
@@ -221,7 +223,7 @@ header {
 .menu-page-content,
 .our-special-section-content {
     text-align: center;
-    padding-top: 40px;
+    padding: 50px 0;
 }
 
 /*=== GRID LAYOUT ===*/
@@ -278,7 +280,10 @@ header {
     align-items: center;
     gap: 30px;
 }
-.about-hero-section-content i {color: white;font-size: 50px;}
+.about-hero-section-content i, .event-hero-section-content i {
+    color: white;
+    font-size: 50px;
+}
 .about-text-side,
 .menu-highlight-text-side,
 .story-section-top-content,
@@ -407,19 +412,22 @@ header {
     background: #2A4827;
     justify-content: center;
     align-items: center;
-    padding: 60px 20px;
-    gap: 40px;
+    padding: 80px 20px;
+    gap: 150px;
 }
 .contact-section-content {
-    flex: 1 1 400px;
+    flex: 0 1 auto;
     text-align: center;
+    padding: 0;
+    width: fit-content;
+    margin: 0;
 }
     .contact-section-content img {
         height: 80px;
     }
     .contact-section-content p {
         color: #FFF;
-        padding: 20px;
+        margin: 5px 0;
     }
     .contact-section-content a {
         text-transform: lowercase;
@@ -429,9 +437,8 @@ header {
             color: #20BA5A;
         }
 .contact-section iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
+    width: 600px;
+    height: 500px;
     border: 0;
     border-radius: 10px;
 }
@@ -476,6 +483,7 @@ footer {
     background-color: #2A4827;
     text-align: center;
     padding: 30px 20px;
+    margin-top: 1px;
 }
     footer p {
         color: white;
@@ -603,7 +611,6 @@ footer {
     #scrolltoTopBtn i {
         font-size: 2.2rem;
         color: #2A4827;
-        /* Cleaned up layout overrides */
         margin: 0;
         padding: 0;
     }
