@@ -153,7 +153,7 @@ header {
     padding: 100px 20px;
 }
 .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url('/img/home-banner.webp') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/img/home-banner.webp') no-repeat center center/cover;
     min-height: 100vh;
 }
 .about-hero-section {
@@ -225,15 +225,19 @@ header {
     text-align: center;
     padding: 50px 0;
 }
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 0;
+    opacity: 0.85;
+}
+.hero-section-content hr {
+    border: 2px dashed white;
+}
 .hero-title {
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
-}
-.hero-subtitle {
-    font-size: 1.2rem;
-    font-weight: 400;
-    opacity: 0.85;
 }
 
 /*=== GRID LAYOUT ===*/
@@ -534,7 +538,7 @@ footer {
         margin-right: 20px;
     }
     .hero-section {
-        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url('/img/home-banner-mobile.webp') no-repeat center center/cover;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/img/home-banner-mobile.webp') no-repeat center center/cover;
     }
     .menu-hero-section {
         background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('/img/menu-banner-mobile.png') no-repeat center center/cover;
