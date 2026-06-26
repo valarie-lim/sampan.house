@@ -1,6 +1,7 @@
 // app/about/page.js
 import Link from "next/link";
 import Script from "next/script";
+import Header from "../../components/Header";
 
 // 1. Next.js SEO Metadata configuration (Cleaned up URLs)
 export const metadata = {
@@ -71,34 +72,12 @@ export default function About() {
 
   return (
     <>
+      <Header />
       {/* 3. Injecting JSON-LD natively using script element */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      {/* N A V I G A T I O N */}
-      <header id="main-header" className="navbar">
-        <Link href="/" className="logo-container">
-          <img src="/img/logo-sampan-house.png" alt="Sampan House Logo" className="logo-img" />
-        </Link>
-        <nav>
-          <ul className="navlist">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about" className="active-link">About Us</Link></li>    
-            <li><Link href="/menu">Menu</Link></li>
-            <li><Link href="/event">Events Space</Link></li>
-            <li><Link href="/contact">Contact Us</Link></li>
-          </ul>
-        </nav>
-
-        <div className="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61563174569797" target="_blank" rel="noreferrer"><i className="ri-facebook-box-fill"></i></a>
-          <a href="https://www.instagram.com/sampan.house" target="_blank" rel="noreferrer"><i className="ri-instagram-fill"></i></a>
-          <a href="https://www.tiktok.com/@sampan.house" target="_blank" rel="noreferrer"><i className="ri-tiktok-fill"></i></a>
-        </div>
-        <div className="bx bx-menu" id="menu-icon"></div>
-      </header>
 
       {/* H E R O */}
       <section className="about-hero-section">
