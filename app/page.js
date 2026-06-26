@@ -76,7 +76,7 @@ export default function Home() {
       "https://www.tiktok.com/@sampan.house"
     ]
   };
-const message ="Hi Sampan House. I would like to make a general enquiry. Could you please assist me?";
+const message = "Hi Sampan House. I would like to make a general enquiry. Could you please assist me?";
 
   return (
     <>
@@ -99,13 +99,13 @@ const message ="Hi Sampan House. I would like to make a general enquiry. Could y
 	  <hr />
 	  <h2>The True Taste of Malaysia</h2>
           <p>From childhood memories to your table—experience the warmth of authentic Malaysian comfort food and modern fusion classics.</p>
-          
-			<a
-			  href={`https://wa.me/601139818818?text=${encodeURIComponent(message)}`}
-			  target="_blank"
-			  rel="noreferrer">
-			  💬 WhatsApp Us
-			</a>
+<a
+  href={`https://wa.me/601139818818?text=${encodeURIComponent(message)}`}
+  target="_blank"
+  rel="noreferrer"
+>
+  💬 WhatsApp Us
+</a>
         </div>
       </section>
 
@@ -213,8 +213,13 @@ const message ="Hi Sampan House. I would like to make a general enquiry. Could y
           <p><strong>Email</strong><br /><a href="mailto:contactme@sampanhouse.asia" target="_blank" rel="noreferrer">contactme@sampanhouse.asia</a></p>
         </div>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.5517680861376!2d110.3806471824646!3d1.520143292392603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba707d13fe9e9%3A0x41c18d6752648792!2sSampan%20House!5e0!3m2!1sen!2smy!4v1782480239596!5m2!1sen!2smy"
-		  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4141424611007!2d110.37866837496608!3d1.520144498465619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba707d13fe9e9%3A0x41c18d6752648792!2sSampan%20House!5e0!3m2!1sen!2smy!4v1781539598113!5m2!1sen!2smy" 
+            style={{ border: 0 }} 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+          />
       </section>
 
       <footer>
