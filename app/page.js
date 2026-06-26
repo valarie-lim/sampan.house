@@ -95,17 +95,17 @@ const message = "Hi Sampan House. I would like to make a general enquiry. Could 
       {/* H E R O */}
       <section id="home" className="hero-section">
         <div className="hero-section-content">
-		<h2 className="hero-subtitle">The True Taste of Malaysia</h2>
-		<hr />
-		<h1 className="hero-title">Authentic Malaysian Restaurant in Kuching</h1>
-        <p>From childhood memories to your table—experience the warmth of authentic Malaysian comfort food and modern fusion classics.</p>
-		<a
-		  href={`https://wa.me/601139818818?text=${encodeURIComponent(message)}`}
-		  target="_blank"
-		  rel="noreferrer"
-		>
-		  💬 WhatsApp Us
-		</a>
+	<h2 className="hero-subtitle">The True Taste of Malaysia</h2>
+	<hr className="hero-divider"/>
+	<h1 className="hero-title">Authentic Malaysian Restaurant in Kuching</h1>
+          <p className="hero-text">From childhood memories to your table—experience the warmth of authentic Malaysian comfort food and modern fusion classics.</p>
+<a
+  href={`https://wa.me/601139818818?text=${encodeURIComponent(message)}`}
+  target="_blank"
+  rel="noreferrer"
+>
+  💬 WhatsApp Us
+</a>
         </div>
       </section>
 
