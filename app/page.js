@@ -76,6 +76,7 @@ export default function Home() {
       "https://www.tiktok.com/@sampan.house"
     ]
   };
+const message ="Hi Sampan House. I would like to make a general enquiry. Could you please assist me?";
 
   return (
     <>
@@ -95,10 +96,10 @@ export default function Home() {
       <section id="home" className="hero-section">
         <div className="hero-section-content">
           <h1>Authentic Malaysian Restaurant in Kuching</h1>
-	  <hr>
+	  <hr />
 	  <h2>The True Taste of Malaysia</h2>
           <p>From childhood memories to your table—experience the warmth of authentic Malaysian comfort food and modern fusion classics.</p>
-          const message ="Hi Sampan House. I would like to make a general enquiry. Could you please assist me?";
+          
 			<a
 			  href={`https://wa.me/601139818818?text=${encodeURIComponent(message)}`}
 			  target="_blank"
