@@ -3,14 +3,13 @@ import Link from "next/link";
 import Script from "next/script";
 import Header from "../components/Header";
 
-// 1. Next.js SEO Metadata Configuration
 export const metadata = {
   title: "舢舨屋 | Sampan House - Authentic Malaysian Restaurant in Kuching",
   description: "Experience authentic Malaysian comfort food & modern fusion classics at Sampan House in Tabuan Stutong, Kuching. Perfect venue for festive gatherings, birthday parties, and corporate events.",
   keywords: ["Sampan House Kuching", "restaurant Stutong", "Malaysian food Kuching", "event space restaurant Kuching", "Apam Balik Kuching", "corporate venue Stutong"],
-  authors: [{ name: "Sampan House" }], // Updated author
+  authors: [{ name: "Sampan House" }],
   alternates: {
-    canonical: "https://sampan-house.vercel.app/", // Reverted to Vercel URL
+    canonical: "https://sampan-house.vercel.app/",
   },
   openGraph: {
     type: "website",
@@ -33,7 +32,7 @@ export const metadata = {
 };
 
 export default function Home() {
-  // 2. Structured Schema JSON-LD Data
+  // Structured Schema JSON-LD Data
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
@@ -80,44 +79,23 @@ export default function Home() {
 
   return (
     <>
-      {/* 3. Injecting JSON-LD Schema */}
+      <Header />
+
+	{/* Injecting JSON-LD Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Load Elfsight Platform script exactly once */}
+      {/* Load Elfsight Platform */}
       <Script src="https://elfsightcdn.com/platform.js" strategy="afterInteractive" />
-
-      {/* N A V I G A T I O N */}
-      <header id="main-header" className="navbar">
-        <Link href="/" className="logo-container">
-          <img src="/img/logo-sampan-house.png" alt="Sampan House Restaurant Kuching Logo" className="logo-img" />
-        </Link>
-        <nav>
-          <ul className="navlist">
-            <li><Link href="/" className="active-link">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>    
-            <li><Link href="/menu">Menu</Link></li>
-            <li><Link href="/event">Events Space</Link></li>
-            <li><Link href="/contact">Contact Us</Link></li>
-          </ul>
-        </nav>
-
-        <div className="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61563174569797" target="_blank" rel="noreferrer"><i className="ri-facebook-box-fill"></i></a>
-          <a href="https://www.instagram.com/sampan.house" target="_blank" rel="noreferrer"><i className="ri-instagram-fill"></i></a>
-          <a href="https://www.tiktok.com/@sampan.house" target="_blank" rel="noreferrer"><i className="ri-tiktok-fill"></i></a>
-        </div>
-        <div className="bx bx-menu" id="menu-icon"></div>
-      </header>
 
       {/* H E R O */}
       <section id="home" className="hero-section">
         <div className="hero-section-content">
           <h1>The True Taste of Malaysia</h1>
           <p>From childhood memories to your table—experience the warmth of authentic Malaysian comfort food and modern fusion classics.</p>
-          <a href="https://wa.me/601139818818" target="_blank" rel="noreferrer">💬 Whatsapp Us</a>
+          <a href="/contact" target="_blank" rel="noreferrer">💬 Whatsapp Us</a>
         </div>
       </section>
 
@@ -139,8 +117,8 @@ export default function Home() {
       {/* M E N U */}
       <section id="menu" className="menu-section-top-container">
         <div className="menu-section-top-content">
-          <img src="/img/menu-img-01.jpg" alt="Our Menu" />
-          <img src="/img/menu-img-02.jpg" alt="Our Menu" />
+          <img src="/img/menu-img-01.jpg" alt="Sampan House Food and Drink" />
+          <img src="/img/menu-img-02.jpg" alt="Sampan House Menu" />
         </div>
       </section>
 
@@ -148,19 +126,19 @@ export default function Home() {
         <div className="menu-section-middle-content">
           <div className="menu-text-side"> 
             <h3>Our Menu</h3>
-            <p>Our menu is a celebration of Malaysia’s rich culinary heritage. Experience the culture and authenticity through our Chef creation and our signature Apam Balik and Signature Tauhu Bakar; and also the local must have beverage 'Teh C Special' and \"Bubbly Teh Tarik\".</p>
+            <p>Our menu is a celebration of Malaysia’s rich culinary heritage. Experience the culture and authenticity through our Chef creation and our signature Apam Balik and Signature Tauhu Bakar; and also the local must have beverage "Teh C Special" and "Bubbly Teh Tarik".</p>
             <Link href="/menu"><i className="ri-arrow-right-double-line"></i>Explore Menu</Link>
           </div>
           <div className="menu-img-side">
-            <img src="/img/menu-img-06.jpg" alt="Our Menu" />
+            <img src="/img/menu-img-06.jpg" alt="Penang Fried Kueh Teow" />
           </div>
         </div>
       </section>
 
       <section className="menu-section-bottom-container">
         <div className="menu-section-bottom-content">
-          <img src="/img/menu-img-03.jpg" alt="Our Menu" />
-          <img src="/img/menu-img-04.jpg" alt="Our Menu" />
+          <img src="/img/menu-img-03.jpg" alt="Ayam Berempah" />
+          <img src="/img/menu-img-04.jpg" alt="Authentic Satay Ayam" />
         </div>
       </section>
 
@@ -169,7 +147,7 @@ export default function Home() {
         <div className="event-section-content">
           <h3>Events Space</h3>
           <hr />
-          <h2>Host Your Next Event <span style={{ fontSize: "1.5em" }}> @ </span> Sampan House</h2>
+          <h2>Host Your Next Event @ Sampan House</h2>
           <p>From intimate gatherings to product launches, our inviting spaces are ready to host your next event. Discover the perfect venue at Sampan House—where comfort, charm, and exceptional service come together to create unforgettable moments.</p>
 
           <div className="event-section-grid">
@@ -220,11 +198,11 @@ export default function Home() {
         <div className="contact-section-content">
           <p><img src="/img/logo-sampan-house.png" alt="Sampan House Logo" className="logo-img" /></p>
           <p><strong>Business Hours</strong><br /> Mon - Sun : 10am-10pm</p>
-          <p><strong>Address</strong><br /> 12 & 13, Tabuan Stutong Commercial Centre, 93010 Kuching, Sarawak</p>
+          <p><strong>Address</strong><br /> 12 & 13, Tabuan Stutong Commercial Centre, <br/>93010 Kuching, Sarawak</p>
           <p><strong>Contact</strong><br /><a href="tel:+601139818818">+60 113 9818 818</a></p>
           <p><strong>Email</strong><br /><a href="mailto:contactme@sampanhouse.asia" target="_blank" rel="noreferrer">contactme@sampanhouse.asia</a></p>
         </div>
-        <div>
+
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4141424611007!2d110.37866837496608!3d1.520144498465619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba707d13fe9e9%3A0x41c18d6752648792!2sSampan%20House!5e0!3m2!1sen!2smy!4v1781539598113!5m2!1sen!2smy" 
             style={{ border: 0 }} 
@@ -232,7 +210,6 @@ export default function Home() {
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
           />
-        </div>
       </section>
 
       <footer>
