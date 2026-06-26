@@ -14,7 +14,7 @@ export default function ContactForm() {
       alert("Please fill in your name and the subject of your enquiry.");
       return;
     }
-    const text = `*Hi Sampan House! I have a website enquiry:*\n\n` +
+    const text = `*Hi Sampan House! I have an enquiry:*\n\n` +
                  `*Name:* ${name}\n` +
                  `*Subject:* ${subject}\n` +
                  `*Message:* ${message || 'No special instructions provided.'}`;
