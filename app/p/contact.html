@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>舢舨屋 | Sampan House</title>
+    <link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!=== N A V I G A T I O N ===>
+    <header id="main-header" class="navbar">
+    <a href="../index.html" class="logo-container">
+        <img src="../img/logo-sampan-house.png" alt="Sampan House Logo" class="logo-img">
+    </a>
+    <nav>
+	<ul class="navlist">
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="about.html">About Us</a></li>	
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="event.html">Events Space</a></li>
+		<li><a href="#" class="active-link">Contact Us</a></li>
+	</ul>
+    </nav>
+
+<div class="social-icons">
+	<a href="https://www.facebook.com/profile.php?id=61563174569797"><i class="ri-facebook-box-fill"></i></a>
+	<a href="https://www.instagram.com/sampan.house"><i class="ri-instagram-fill"></i></a>
+	<a href="https://www.tiktok.com/@sampan.house"><i class="ri-tiktok-fill"></i></a>
+</div>
+	<div class="bx bx-menu" id="menu-icon"></div>
+</header>
+
+
+<!=== Enquiry Form ===>
+    <section class="contact-hero-section">
+	<div>
+	    <h2>Enquiry Form</h2>
+    <form id="whatsappForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required placeholder="John Doe">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" required placeholder="Inquiry about the event space">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="I'd like to check on availability for 20pax on this Sunday evening."></textarea>
+
+        <button type="button" onclick="sendToWhatsApp()">WhatsApp Now</button>
+    </form>
+	</div>
+    </section>
+
+<!=== C O N T A C T ===>
+    <section id="contact" class="contact-section">
+	<div class="contact-section-content">
+<p><img src="../img/logo-sampan-house.png" alt="Sampan House Logo" class="logo-img"></p>
+<p><strong>Business Hours</strong><br> Mon - Sun : 10am-10pm</p>
+<p><strong>Address</strong><br> 12 & 13, Tabuan Stutong Commercial Centre, 93010 Kuching, Sarawak</p>
+<p><strong>Contact</strong><br><a href="tel:+601139818818">+60 113 9818 818</a></p>
+<p><strong>Email</strong><br><a href="mailto:contactme@sampanhouse.asia"  target="_blank">contactme@sampanhouse.asia</a></p>
+	</div>
+	<div>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4141424611007!2d110.37866837496608!3d1.520144498465619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba707d13fe9e9%3A0x41c18d6752648792!2sSampan%20House!5e0!3m2!1sen!2smy!4v1781539598113!5m2!1sen!2smy" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+    </section>
+
+
+
+    <footer>
+        <p>© 2026 Sampan Jaya Sdn Bhd (1575187-A). All Rights Reserved. </p>
+	<p>Mockup Design Site by <a href="https://valarie-lim.com">VL Digital Solutions.</a></p>
+    </footer>
+
+<script src="../script.js"></script>
+<script>
+function sendToWhatsApp() {
+    const phoneNumber = "60109640097"; 
+
+    const name = document.getElementById('name').value.trim();
+    const subject = document.getElementById('subject').value.trim(); // Changed variable name to match template string
+    const message = document.getElementById('message').value.trim();
+
+    // Updated validation text to fit an inquiry form
+    if (!name || !subject) {
+        alert("Please fill in your name and the subject of your enquiry.");
+        return;
+    }
+
+    const text = `*Hi Sampan House! I have a website enquiry:*\n\n` +
+             `*Name:* ${name}\n` +
+             `*Subject:* ${subject}\n` +
+             `*Message:* ${message || 'No special instructions provided.'}`;
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+
+    window.open(whatsappUrl, '_blank');
+}
+</script>
+</body>
+</html>
