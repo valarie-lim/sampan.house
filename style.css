@@ -231,13 +231,21 @@ header {
     line-height: 0;
     opacity: 0.85;
 }
-.hero-section-content hr {
+.hero-divider {
     border: 2px dashed white;
 }
 .hero-title {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
+}
+.hero-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+.event-section-grid-item h5, .our-special-section-grid-item h5 {
+    padding-top: 20px;
 }
 
 /*=== GRID LAYOUT ===*/
@@ -542,6 +550,23 @@ footer {
     }
     .menu-hero-section {
         background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('/img/menu-banner-mobile.png') no-repeat center center/cover;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        opacity: 0.85;
+    }
+    .hero-section-content hr {
+        border: 2px dashed white;
+    }
+    .hero-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .hero-text {
+        font-size: 1.2rem;
     }
     .about-section,
     .menu-highlight-section,
