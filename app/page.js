@@ -83,6 +83,7 @@ export default function Home() {
 
 	{/* Injecting JSON-LD Schema */}
       <script
+	id="restaurant-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
@@ -95,7 +96,11 @@ export default function Home() {
         <div className="hero-section-content">
           <h1>The True Taste of Malaysia</h1>
           <p>From childhood memories to your table—experience the warmth of authentic Malaysian comfort food and modern fusion classics.</p>
-          <a href="/contact" target="_blank" rel="noreferrer">💬 Whatsapp Us</a>
+          <a
+  href="https://wa.me/60109640097?text=Hi%20Sampan%20House.%20I%20would%20like%20to%20inquire%20about%20your%20event%20space.%0A%0AEvent%20Date%3A%0ANumber%20of%20Guests%3A%0AType%20of%20Event%3A%0A%0AThank%20you."
+  target="_blank"
+  rel="noopener noreferrer"
+>💬 Whatsapp Us</a>
         </div>
       </section>
 
@@ -126,7 +131,7 @@ export default function Home() {
         <div className="menu-section-middle-content">
           <div className="menu-text-side"> 
             <h3>Our Menu</h3>
-            <p>Our menu is a celebration of Malaysia’s rich culinary heritage. Experience the culture and authenticity through our Chef creation and our signature Apam Balik and Signature Tauhu Bakar; and also the local must have beverage Teh C Special and Bubbly Teh Tarik.</p>
+            <p>Our menu is a celebration of Malaysia’s rich culinary heritage. Experience the culture and authenticity through our Chef creation and our signature Apam Balik and Signature Tauhu Bakar; and also the local must have beverage "Teh C Special" and "Bubbly Teh Tarik".</p>
             <Link href="/menu"><i className="ri-arrow-right-double-line"></i>Explore Menu</Link>
           </div>
           <div className="menu-img-side">
