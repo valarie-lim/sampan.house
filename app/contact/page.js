@@ -1,9 +1,9 @@
 // app/contact/page.js
 import Link from "next/link";
 import Script from "next/script";
-import ContactForm from "../../components/ContactForm"; // Here we import the interactive form component
+import Header from "../../components/Header";
+import ContactForm from "../../components/ContactForm";
 
-// Your dedicated SEO for this exact page goes here!
 export const metadata = {
   title: "Contact Us | 舢舨屋 Sampan House - Restaurant Venue in Kuching",
   description: "Have questions about our event space or menu? Contact Sampan House in Tabuan Stutong, Kuching. Send us a message directly via WhatsApp.",
@@ -23,34 +23,13 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      {/* N A V I G A T I O N */}
-      <header id="main-header" className="navbar">
-        <Link href="/" className="logo-container">
-          <img src="/img/logo-sampan-house.png" alt="Sampan House Logo" className="logo-img" />
-        </Link>
-        <nav>
-          <ul className="navlist">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>    
-            <li><Link href="/menu">Menu</Link></li>
-            <li><Link href="/event">Events Space</Link></li>
-            <li><Link href="/contact" className="active-link">Contact Us</Link></li>
-          </ul>
-        </nav>
-
-        <div className="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61563174569797" target="_blank" rel="noreferrer"><i className="ri-facebook-box-fill"></i></a>
-          <a href="https://www.instagram.com/sampan.house" target="_blank" rel="noreferrer"><i className="ri-instagram-fill"></i></a>
-          <a href="https://www.tiktok.com/@sampan.house" target="_blank" rel="noreferrer"><i className="ri-tiktok-fill"></i></a>
-        </div>
-        <div className="bx bx-menu" id="menu-icon"></div>
-      </header>
+      <Header />
 
       {/* Enquiry Form Section */}
       <section className="contact-hero-section">
         <div>
           <h2>Enquiry Form</h2>
-          {/* We place the Client component safely right here */}
+
           <ContactForm /> 
         </div>
       </section>
