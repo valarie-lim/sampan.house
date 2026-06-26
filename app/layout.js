@@ -6,14 +6,14 @@ export default function RootLayout({children}) {
 return (
 <html lang="en">
 <head>
-{/* Make sure your Boxicons link tag is here if you use the CDN */}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-</head>
-<body>
-{children}
-{/* This injects the button globally onto every single page! */}
-<ScrollToTop />
-</body>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+      </head>
+<body suppressHydrationWarning>
+        {children}
+        <ScrollToTop />
+      </body>
 </html>
 );
 }
