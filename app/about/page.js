@@ -33,7 +33,7 @@ export default function About() {
     "url": "https://sampan-house.vercel.app",
     "telephone": "+601139818818",
     "priceRange": "$$",
-    "menu": "https://sampan-house.vercel.app/menu", // Fixed path from old static HTML template (.html)
+    "menu": "https://sampan-house.vercel.app/menu",
     "servesCuisine": ["Malaysian", "Fusion"],
     "address": {
       "@type": "PostalAddress",
