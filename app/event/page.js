@@ -1,8 +1,8 @@
 // app/event/page.js
 import Link from "next/link";
 import Script from "next/script";
+import Header from "../../components/Header";
 
-// Dedicated SEO Metadata for the Event Space Page
 export const metadata = {
   title: "Event Space Booking | 舢舨屋 Sampan House Kuching",
   description: "Looking for a gathering space in Stutong? Host your next corporate event, birthday celebration, or festive gathering at Sampan House. Enjoy customizable catering and a warm ambiance.",
@@ -22,34 +22,13 @@ export const metadata = {
 export default function Event() {
   return (
     <>
-      {/* N A V I G A T I O N */}
-      <header id="main-header" className="navbar">
-        <Link href="/" className="logo-container">
-          <img src="/img/logo-sampan-house.png" alt="Sampan House Logo" className="logo-img" />
-        </Link>
-        <nav>
-          <ul className="navlist">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>    
-            <li><Link href="/menu">Menu</Link></li>
-            <li><Link href="/event" className="active-link">Events Space</Link></li>
-            <li><Link href="/contact">Contact Us</Link></li>
-          </ul>
-        </nav>
-
-        <div className="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61563174569797" target="_blank" rel="noreferrer"><i className="ri-facebook-box-fill"></i></a>
-          <a href="https://www.instagram.com/sampan.house" target="_blank" rel="noreferrer"><i className="ri-instagram-fill"></i></a>
-          <a href="https://www.tiktok.com/@sampan.house" target="_blank" rel="noreferrer"><i className="ri-tiktok-fill"></i></a>
-        </div>
-        <div className="bx bx-menu" id="menu-icon"></div>
-      </header>
+      <Header />
 
       {/* H E R O */}
       <section className="event-hero-section">
         <div className="event-hero-section-content">
-          <h1>Looking for Gathering Space?</h1>
-          <p>We are here to cover you.</p>
+          <h1>Host Your Next Event @ Sampan House</h1>
+          <p>From intimate gatherings to product launches, our inviting spaces are ready to host your next event. Discover the perfect venue at Sampan House—where comfort, charm, and exceptional service come together to create unforgettable moments.</p>
           <Link href="#event"><i className="bx bx-caret-down-circle"></i></Link>
         </div>
       </section>
@@ -58,10 +37,6 @@ export default function Event() {
       <section id="event" className="event-section">
         <div className="event-section-content">
           <h3>Events Space</h3>
-          <hr />
-          <h2>Host Your Next Event <span style={{ fontSize: "1.5em" }}> @ </span> Sampan House</h2>
-          <p>From intimate gatherings to product launches, our inviting spaces are ready to host your next event. Discover the perfect venue at Sampan House—where comfort, charm, and exceptional service come together to create unforgettable moments.</p>
-
           <div className="event-section-grid">
             <div className="event-section-grid-item">
               <img src="/img/event-img-01.jpg" alt="Festive Celebrations" />
