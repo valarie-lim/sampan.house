@@ -3,13 +3,12 @@ import Link from "next/link";
 import Script from "next/script";
 import Header from "../../components/Header";
 
-// 1. Next.js SEO Metadata configuration (Cleaned up URLs)
 export const metadata = {
   title: "About Sampan House (舢舨屋) | Authentic Malaysian Restaurant in Kuching",
   description: "Discover the story behind Sampan House in Kuching. Enjoy authentic Malaysian comfort food, from Char Kuey Teow to Mee Jawa, crafted by our experienced Head Chef.",
   keywords: ["Sampan House", "Kuching restaurant", "Stutong food", "Malaysian comfort food", "Mee Jawa Kuching", "Char Kuey Teow", "cafe Tabuan Stutong"],
   alternates: {
-    canonical: "https://sampan-house.vercel.app/about", // Updated to production domain
+    canonical: "https://sampan-house.vercel.app/about",
   },
   openGraph: {
     type: "website",
@@ -25,7 +24,7 @@ export const metadata = {
 };
 
 export default function About() {
-  // 2. Structured Schema JSON-LD Data (Fixed mismatched paths)
+  // Schema JSON-LD Data
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
@@ -73,17 +72,21 @@ export default function About() {
   return (
     <>
       <Header />
-      {/* 3. Injecting JSON-LD natively using script element */}
+
+      {/* Injecting JSON-LD */}
       <script
-        type="application/ld+json"
+        id="restaurant-schema"
+	type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
       {/* H E R O */}
       <section className="about-hero-section">
         <div className="about-hero-section-content">
-          <h1>The True Taste of Malaysia</h1>
-          <p>From childhood memories to your table—experience the warmth of authentic Malaysian comfort food and modern fusion classics.</p>
+	<h2 className="hero-subtitle">Honoring tradition, embracing fusion.</h2>
+	<hr className="hero-divider"/>
+	<h1 className="hero-title">The Heart and Soul of Sampan House</h1>
+          <p className="hero-text">Honoring generational recipes through a modern lens, we bring the true taste of Malaysia to your table. Experience a perfect balance of authentic warmth and creative fusion.</p>
           <Link href="#story"><i className="bx bx-caret-down-circle"></i></Link>
         </div>
       </section>
