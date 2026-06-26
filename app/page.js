@@ -126,7 +126,7 @@ export default function Home() {
         <div className="menu-section-middle-content">
           <div className="menu-text-side"> 
             <h3>Our Menu</h3>
-            <p>Our menu is a celebration of Malaysia’s rich culinary heritage. Experience the culture and authenticity through our Chef creation and our signature Apam Balik and Signature Tauhu Bakar; and also the local must have beverage "Teh C Special" and "Bubbly Teh Tarik".</p>
+            <p>Our menu is a celebration of Malaysia’s rich culinary heritage. Experience the culture and authenticity through our Chef creation and our signature Apam Balik and Signature Tauhu Bakar; and also the local must have beverage Teh C Special and Bubbly Teh Tarik.</p>
             <Link href="/menu"><i className="ri-arrow-right-double-line"></i>Explore Menu</Link>
           </div>
           <div className="menu-img-side">
