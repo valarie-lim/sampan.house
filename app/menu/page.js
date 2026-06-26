@@ -1,12 +1,12 @@
 // app/menu/page.js
 import Link from "next/link";
 import Script from "next/script";
+import Header from "../../components/Header";
 
-// Dedicated SEO Metadata for the Menu Page
 export const metadata = {
   title: "Our Menu | 舢舨屋 Sampan House - Authentic Malaysian Food in Kuching",
   description: "Explore our culinary voyage. Browse our digital menu featuring award-winning Ayam Berempah, signature Apam Balik, local favourites, and refreshing Teh C Special at Tabuan Stutong.",
-  keywords: ["Sampan House Menu", "Ayam Berempah Kuching", "Malaysian restaurant menu Stutong", "Kuching flipbook menu"],
+  keywords: ["Sampan House Menu", "Ayam Berempah Kuching", "Malaysian restaurant menu Stutong", "Kuching Authentic Food", "Kuching Kolo Mee", "Sarawak Laksa"],
   alternates: {
     canonical: "https://sampan-house.vercel.app/menu",
   },
@@ -22,28 +22,7 @@ export const metadata = {
 export default function Menu() {
   return (
     <>
-      {/* N A V I G A T I O N */}
-      <header id="main-header" className="navbar">
-        <Link href="/" className="logo-container">
-          <img src="/img/logo-sampan-house.png" alt="Sampan House Logo" className="logo-img" />
-        </Link>
-        <nav>
-          <ul className="navlist">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>    
-            <li><Link href="/menu" className="active-link">Menu</Link></li>
-            <li><Link href="/event">Events Space</Link></li>
-            <li><Link href="/contact">Contact Us</Link></li>
-          </ul>
-        </nav>
-
-        <div className="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61563174569797" target="_blank" rel="noreferrer"><i className="ri-facebook-box-fill"></i></a>
-          <a href="https://www.instagram.com/sampan.house" target="_blank" rel="noreferrer"><i className="ri-instagram-fill"></i></a>
-          <a href="https://www.tiktok.com/@sampan.house" target="_blank" rel="noreferrer"><i className="ri-tiktok-fill"></i></a>
-        </div>
-        <div className="bx bx-menu" id="menu-icon"></div>
-      </header>
+      <Header />
 
       {/* H E R O */}
       <section className="menu-hero-section"></section>
