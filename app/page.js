@@ -160,18 +160,18 @@ const message = "Hi Sampan House. I would like to make a general enquiry. Could 
           <h2>Host Your Next Event @ Sampan House</h2>
           <p>From intimate gatherings to product launches, our inviting spaces are ready to host your next event. Discover the perfect venue at Sampan House—where comfort, charm, and exceptional service come together to create unforgettable moments.</p>
 
-          <div className="event-section-grid">
-            <div className="event-section-grid-item">
+          <div className="section-grid">
+            <div className="section-grid-item">
               <img src="/img/event-img-01.jpg" alt="Festive Celebrations" />
               <h5>Festive Gatherings</h5>
               <p>Mark special moments like Hari Raya, Christmas, or New Year in a cosy, relaxed setting. Let us help you create a celebration worth remembering.</p>
             </div>
-            <div className="event-section-grid-item">
+            <div className="section-grid-item">
               <img src="/img/event-img-02.jpg" alt="Birthdays" />
               <h5>Birthdays Celebration</h5>
               <p>Enjoy a thoughtful celebration surrounded by those who matter most. With our carefully curated menu and inviting ambiance, your birthday can be as relaxed or refined as you like.</p>
             </div>
-            <div className="event-section-grid-item">
+            <div className="section-grid-item">
               <img src="/img/event-img-03.jpg" alt="Corporate Gatherings" />
               <h5>Corporate Events</h5>
               <p>Bring your team together in a comfortable environment, perfect for business lunches, casual meetings, or appreciation events — all served with our signature warmth.</p>
