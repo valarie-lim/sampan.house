@@ -133,18 +133,18 @@ export default function About() {
       <section className="our-special-section">
         <div className="our-special-section-content">
           <h2>What Makes Us Special</h2>
-          <div className="our-special-section-grid">
-            <div className="our-special-section-grid-item">
+          <div className="section-grid">
+            <div className="section-grid-item">
               <img src="/img/about-special-img-01.jpg" alt="30 years of culinary expertise" />
               <h5>Our Culinary Roots</h5>
               <p>Our kitchen is guided by a Head Chef with over ten years of professional culinary experience, supported by a skilled team dedicated to the craft of Malaysian cooking.</p>
             </div>
-            <div className="our-special-section-grid-item">
+            <div className="section-grid-item">
               <img src="/img/about-special-img-02.jpg" alt="The power of homemade" />
               <h5>Authentic Flavour</h5>
               <p>We believe great food starts from scratch. Our signature spice pastes, rich curries, and savory sauces are prepared entirely in-house using fresh, locally sourced ingredients.</p>
             </div>
-            <div className="our-special-section-grid-item">
+            <div className="section-grid-item">
               <img src="/img/about-special-img-03.jpg" alt="A cozy gathering space" />
               <h5>Cozy Gathering Space</h5>
               <p>Designed as a sanctuary from the daily hustle, our restaurant features a calm, warm, and highly photogenic ambiance—ideal for casual lunches, family dinners, or special occasions.</p>
