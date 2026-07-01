@@ -184,23 +184,47 @@ const message = "Hi Sampan House. I would like to make a general enquiry. Could 
       {/* N E W S */}
       <section id="news" className="news-section">
         <div className="news-section-content">
-          <h2>Latest News</h2>
+          <h4>Follow Our Journey</h4>
+          <hr />
+	  <h2>Connect With Us on Instagram</h2>
           <p>Stay updated with the latest news, insights, and stories from Sampan House. Discover our happiness and latest promotions.</p>
-          <div className="elfsight-app-9919505c-9088-4a3e-8c9e-5645e09d8391" data-elfsight-app-lazy="true"></div>
+          </div>
+        <div className="news-section-update">
+	<style dangerouslySetInnerHTML={{__html: `
+	    .news-section-update a[href*="elfsight.com"], a[href*="elfsight.com/instagram-feed-instashow"] {
+    		z-index: -1 !important;
+    	}
+  	`}} />
+	<div className="elfsight-app-9919505c-9088-4a3e-8c9e-5645e09d8391" data-elfsight-app-lazy="true">
+	</div>
+
         </div>
       </section>
 
       {/* R E V I E W */}
       <section id="review">
         <div className="review-section">
-          <h4>Reviews</h4>
+          <h4>Our Reputation</h4>
           <hr />
-          <h2>What Our Guests Cherish</h2>
+          <h2>Loved by Locals & Foodies</h2>
           <p>With over 1,000 five-star memories and counting. Discover why food lovers keep coming back to Sampan House for the true taste of Malaysia.</p>
-        </div>
+</div>
         <div className="review-section-google">
-          <div className="elfsight-app-1ce7df3f-3b2c-4ca6-9aed-890a2e9d8d2c" data-elfsight-app-lazy="true"></div>
-        </div>
+	<Script 
+	        src="https://elfsightcdn.com/platform.js" 
+	        strategy="lazyOnload" 
+	      />
+	<style dangerouslySetInnerHTML={{__html: `
+      	.review-section-google {
+	        position: relative !important;
+	        overflow: hidden !important;
+	        padding-bottom: 0 !important;
+		margin-bottom: 60px !important;
+	    }
+    	.review-section-google > div {margin-bottom: -80px !important;}
+    `}} />
+	<div className="elfsight-app-e61134cc-8260-403d-a895-df757e17f680" data-elfsight-app-lazy="true"></div>
+	</div>
       </section>
 
       {/* C O N T A C T */}
@@ -226,7 +250,6 @@ const message = "Hi Sampan House. I would like to make a general enquiry. Could 
         <p>© 2026 Sampan Jaya Sdn Bhd (1575187-A). All Rights Reserved. </p>
         <p>Mockup Design Site by <a href="https://valarie-lim.com" target="_blank" rel="noreferrer">VL Digital Solutions</a>.</p>
       </footer>
-
     </>
   );
 }
