@@ -69,7 +69,6 @@ h6 {
 
 /*=== NAVIGATION MENU & HEADER ===*/
 header {
-
     position: fixed;
     right: 0;
     top: 0;
@@ -411,16 +410,39 @@ header {
         background: #FFF;
         color: #2A4827;
     }
+.event-section h2, .review-section h2 {
+    color: #2A4827;
+    line-height: 1.5;
+}
+.event-section hr, .review-section hr {
+    border: 2px dashed #2A4827;
+    margin: 10px auto 30px auto;
+}
 .news-section {
     background: #2A4827;
-    padding: 60px 20px;
+    padding: 20px 20px 0 20px;
     color: #FFF;
 }
+    .news-section h2 {
+        color: #FFF;
+        line-height: 1.5;
+    }
+    .news-section hr {
+        border: 2px dashed #FFF;
+        margin: 10px auto 30px auto;
+    }
     .news-section p {
         color: #FFF;
-        padding-bottom: 20px;
-        font-size: 18px;
+    }
+    .news-section p, .event-section p, .review-section p {
+        font-size: 20px;
         line-height: 1.5;
+    }
+    .news-section-update, .review-section-google {
+        background: transparent;
+        padding: 0 0 60px 0;
+        color: #FFF;
+        font-family: "Roboto", sans-serif !important;
     }
 
 /*=== CONTACT PAGE ===*/
