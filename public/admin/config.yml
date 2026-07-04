@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: valarie-lim/sampan.house
+  branch: main
+  # This base_url will point to your Vercel OAuth server, which we will set up in Stage 2
+  base_url: https://sampan-house.vercel.app 
+  auth_endpoint: api/auth
+
+media_folder: "public/menu" # Where uploaded files/PDFs are saved in your repo
+public_folder: "/menu"      # The public URL path to serve those files
+
+collections:
+  - name: "restaurant_menu"
+    label: "Restaurant Menu File"
+    delete: false # Prevent client from accidentally deleting the file container
+    editor:
+      preview: false # Disable complex code preview mode for standard files
+    files:
+      - name: "menu_pdf"
+        label: "Live Menu File"
+        file: "public/menu/menu.pdf" # The exact file the flipbook reads
+        fields:
+          - { label: "Upload New Menu PDF", name: "menu", widget: "file" }
