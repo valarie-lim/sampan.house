@@ -11,11 +11,11 @@ public_folder: "/menu"
 collections:
   - name: "restaurant_menu"
     label: "Restaurant Menu"
-    # We use a clean file collection, but we give Decap a text file to track the data
+    description: "Upload your menu file here. **Note: The file must be named exactly 'menu.pdf'**"
     files:
       - name: "menu_data"
-        label: "Live Menu Upload"
+        label: "Latest Menu Upload [PDF only]"
         file: "public/menu/menu-config.md" # Decap saves a tiny tracking file here
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Restaurant Menu" }
-          - { label: "Upload New Menu PDF", name: "menu_pdf", widget: "file" }
+          - { label: "Upload Latest Menu PDF", name: "menu_pdf", widget: "file" }
