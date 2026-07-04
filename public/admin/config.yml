@@ -20,4 +20,4 @@ collections:
         label: "Live Menu File"
         file: "public/menu.pdf" # The exact file the flipbook reads
         fields:
-          - { label: "Upload New Menu PDF", name: "menu", widget: "file" }
+          - { label: "Upload New Menu PDF", name: "file", widget: "file" }
