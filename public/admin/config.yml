@@ -6,8 +6,8 @@ backend:
   base_url: https://sampan-house.vercel.app 
   auth_endpoint: api/auth
 
-media_folder: "public/menu" # Where uploaded files/PDFs are saved in your repo
-public_folder: "/menu"      # The public URL path to serve those files
+media_folder: "public" # Where uploaded files/PDFs are saved in your repo
+public_folder: "/"      # The public URL path to serve those files
 
 collections:
   - name: "restaurant_menu"
@@ -18,6 +18,6 @@ collections:
     files:
       - name: "menu_pdf"
         label: "Live Menu File"
-        file: "public/menu/menu.pdf" # The exact file the flipbook reads
+        file: "public/menu.pdf" # The exact file the flipbook reads
         fields:
           - { label: "Upload New Menu PDF", name: "menu", widget: "file" }
