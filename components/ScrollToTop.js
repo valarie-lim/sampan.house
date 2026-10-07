@@ -1,6 +1,6 @@
 // components/ScrollToTop.js
 "use client";
-
+import "./ScrollToTop.css";
 import { useEffect, useState } from "react";
 
 export default function ScrollToTop() {
@@ -17,13 +17,12 @@ export default function ScrollToTop() {
 
     window.addEventListener("scroll", toggleVisibility);
 
-    // Fix: corrected spelling of toggleVisibility here
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0, // Fix: replaced semicolon with a comma
+      top: 0,
       behavior: "smooth",
     });
   };
@@ -33,6 +32,6 @@ export default function ScrollToTop() {
   return (
     <button onClick={scrollToTop} id="scrolltoTopBtn" title="Go to top">
       <i className="bx bx-chevron-up"></i>
-    </button> 
-  ); // Fix: added closing </button> tag
+    </button>
+  );
 }

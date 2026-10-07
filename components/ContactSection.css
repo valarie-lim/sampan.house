@@ -1,0 +1,36 @@
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  gap: 50px;
+}
+.contact-section-content {
+  flex: 0 1 auto;
+  text-align: center;
+  padding: 0;
+  width: fit-content;
+  margin: 0;
+}
+.contact-section-content img {
+  height: 80px;
+}
+.contact-section-content p {
+  color: var(--secondary-text-color);
+  margin: 5px 0;
+}
+.contact-section-content a {
+  text-transform: lowercase;
+  color: var(--secondary-text-color);
+}
+.contact-section-content a:hover {
+  color: var(--secondary-color);
+}
+.contact-section iframe {
+  width: 600px;
+  height: 500px;
+  border: 0;
+  border-radius: 10px;
+}

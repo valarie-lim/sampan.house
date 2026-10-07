@@ -1,0 +1,12 @@
+.review-section {
+  hr {
+    margin: 10px auto 30px auto;
+  }
+}
+
+.review-section-google {
+  background: transparent;
+  padding: 0 0 60px 0;
+  color: var(--secondary-text-color);
+  font-family: var(--font-family-secondary) !important;
+}

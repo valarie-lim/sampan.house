@@ -1,0 +1,53 @@
+#whatsappForm {
+  width: 100%;
+  max-width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--secondary-text-variant);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  margin: 0 auto;
+}
+#whatsappForm label {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--font-family-secondary);
+}
+#whatsappForm input,
+#whatsappForm textarea {
+  padding: 12px;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 5px;
+  background-color: var(--secondary-text-color) e6;
+  color: var(--secondary-text-color);
+}
+#whatsappForm input:focus,
+#whatsappForm textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--shadow-color);
+}
+
+#whatsappForm input::placeholder,
+#whatsappForm textarea::placeholder {
+  color: var(--secondary-text-color);
+  opacity: 0.7;
+}
+#whatsappForm input:focus::placeholder,
+#whatsappForm textarea:focus::placeholder {
+  opacity: 0.4;
+}
+#whatsappForm button {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+#whatsappForm button:hover {
+  background-color: var(--secondary-color);
+}

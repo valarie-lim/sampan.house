@@ -1,0 +1,19 @@
+.news-section {
+  background: var(--primary-color);
+  padding: 20px 20px 0 20px;
+  color: var(--secondary-text-color);
+
+  h2 {
+    color: var(--secondary-text-color);
+    line-height: 1.5;
+  }
+
+  hr {
+    border: 2px dashed var(--secondary-text-color);
+    margin: 10px auto 30px auto;
+  }
+
+  p {
+    color: var(--secondary-text-color);
+  }
+}
