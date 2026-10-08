@@ -1,7 +1,6 @@
 // app/menu/page.js
-
+import MenuPDFClient from "../../components/menu/MenuPDFClient";
 import ContactSection from "../../components/shared/ContactSection";
-import MenuPDF from "../../components/menu/MenuPDF";
 
 export const metadata = {
   title: "Our Menu | 舢舨屋 Sampan House - Authentic Malaysian Food in Kuching",
@@ -78,7 +77,7 @@ export default function Menu() {
       {/* H E R O */}
       <section className="menu-hero-section"></section>
 
-      <MenuPDF />
+      <MenuPDFClient />
       <ContactSection />
     </>
   );
