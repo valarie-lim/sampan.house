@@ -76,8 +76,23 @@ export default function Menu() {
 
       {/* H E R O */}
       <section className="menu-hero-section"></section>
-
-      <MenuPDFClient />
+      <section className="menu-page-section">
+        <div className="menu-page-content">
+          <h1>Our Culinary Voyage</h1>
+          <p>
+            Open up and explore a voyage of traditional flavors, from our award-winning Ayam Berempah to local
+            favorites.
+          </p>
+          <div className="menu-download-btn-container">
+            <a href="/menu/menu.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              Download Full Menu (PDF) ↗
+            </a>
+          </div>
+          <div className="display-menu">
+            <MenuPDFClient />
+          </div>
+        </div>
+      </section>
       <ContactSection />
     </>
   );
