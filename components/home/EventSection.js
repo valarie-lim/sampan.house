@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import imgEvent1 from "../public/img/event-img-01.jpg";
-import imgEvent2 from "../public/img/event-img-02.jpg";
-import imgEvent3 from "../public/img/event-img-03.jpg";
+import imgEvent1 from "../../public/img/event-img-01.jpg";
+import imgEvent2 from "../../public/img/event-img-02.jpg";
+import imgEvent3 from "../../public/img/event-img-03.jpg";
 
 export default function EventSection() {
   return (

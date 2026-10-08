@@ -1,9 +1,7 @@
 // app/menu/page.js
-import Link from "next/link";
-import Script from "next/script";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import ContactSection from "../../components/ContactSection";
+
+import ContactSection from "../../components/shared/ContactSection";
+import MenuPDF from "../../components/menu/MenuPDF";
 
 export const metadata = {
   title: "Our Menu | 舢舨屋 Sampan House - Authentic Malaysian Food in Kuching",
@@ -70,8 +68,6 @@ export default function Menu() {
 
   return (
     <>
-      <Header />
-
       {/* Injecting JSON-LD */}
       <script
         id="restaurant-schema"
@@ -82,29 +78,8 @@ export default function Menu() {
       {/* H E R O */}
       <section className="menu-hero-section"></section>
 
-      {/* M E N U */}
-      <section className="menu-page-section">
-        <div className="menu-page-content">
-          <h1>Our Culinary Voyage</h1>
-          <p>
-            Open up and explore a voyage of traditional flavors, from our award-winning Ayam Berempah to local
-            favorites.
-          </p>
-          <iframe
-            allowFullScreen={true}
-            allow="clipboard-write"
-            scrollable="no"
-            className="fp-iframe"
-            style={{ border: "1px solid lightgray", width: "100%", height: "700px" }}
-            src="https://heyzine.com/flip-book/eb08b33cdb.html"
-          />
-        </div>
-      </section>
-
+      <MenuPDF />
       <ContactSection />
-      <Footer />
-
-      <Script src="/script.js" strategy="afterInteractive" />
     </>
   );
 }

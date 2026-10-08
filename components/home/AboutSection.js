@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import "./AboutSection.css";
-import imgAbout from "../public/img/about-img-01.png";
+import imgAbout from "../../public/img/about-img-01.png";
 
 export default function AboutSection() {
   return (

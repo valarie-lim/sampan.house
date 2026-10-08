@@ -1,6 +1,8 @@
 // app/layout.js
 import "../style.css";
-import ScrollToTop from "../components/ScrollToTop";
+import ScrollToTop from "../components/shared/ScrollToTop";
+import Header from "../components/shared/Header";
+import Footer from "../components/shared/Footer";
 
 export default function RootLayout({ children }) {
   return (
@@ -17,7 +19,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body suppressHydrationWarning>
+        <Header />
         {children}
+        <Footer />
         <ScrollToTop />
       </body>
     </html>

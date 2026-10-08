@@ -1,6 +1,6 @@
 import "./ContactSection.css";
 import Image from "next/image";
-import brandLogo from "../public/img/logo-sampan-house.png";
+import brandLogo from "../../public/img/logo-sampan-house.png";
 
 export default function ContactSection() {
   return (

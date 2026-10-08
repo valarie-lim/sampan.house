@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import "./MenuSection.css";
-import imgMenu1 from "../public/img/menu-img-01.jpg";
-import imgMenu2 from "../public/img/menu-img-02.jpg";
-import imgMenu3 from "../public/img/menu-img-03.jpg";
-import imgMenu4 from "../public/img/menu-img-04.jpg";
-import imgMenu5 from "../public/img/menu-img-06.jpg";
+import imgMenu1 from "../../public/img/menu-img-01.jpg";
+import imgMenu2 from "../../public/img/menu-img-02.jpg";
+import imgMenu3 from "../../public/img/menu-img-03.jpg";
+import imgMenu4 from "../../public/img/menu-img-04.jpg";
+import imgMenu5 from "../../public/img/menu-img-06.jpg";
 
 export default function MenuSection() {
   return (

@@ -1,14 +1,12 @@
 // app/page.js
 import Script from "next/script";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import HeroSection from "../components/HeroSection";
-import AboutSection from "../components/AboutSection";
-import MenuSection from "../components/MenuSection";
-import EventSection from "../components/EventSection";
-import LatestNews from "../components/LatestNews";
-import GoogleReview from "../components/GoogleReview";
-import ContactSection from "../components/ContactSection";
+import HeroSection from "../components/home/HeroSection";
+import AboutSection from "../components/home/AboutSection";
+import MenuSection from "../components/home/MenuSection";
+import EventSection from "../components/home/EventSection";
+import LatestNews from "../components/home/LatestNews";
+import GoogleReview from "../components/home/GoogleReview";
+import ContactSection from "../components/shared/ContactSection";
 
 export const metadata = {
   title: "舢舨屋 | Sampan House - Authentic Malaysian Restaurant in Kuching",
@@ -97,7 +95,6 @@ export default function Home() {
       {/* Load Elfsight Platform */}
       <Script src="https://elfsightcdn.com/platform.js" strategy="afterInteractive" />
 
-      <Header />
       <HeroSection />
       <AboutSection />
       <MenuSection />
@@ -105,7 +102,6 @@ export default function Home() {
       <LatestNews />
       <GoogleReview />
       <ContactSection />
-      <Footer />
     </>
   );
 }

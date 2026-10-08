@@ -2,9 +2,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import Image from "next/image";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import ContactSection from "../../components/ContactSection";
+import ContactSection from "../../components/shared/ContactSection";
 import imgAbout01 from "../../public/img/about-story-img-01.png";
 import imgAbout02 from "../../public/img/about-story-img-02.png";
 import imgAbout03 from "../../public/img/about-story-img-03.jpg";
@@ -12,6 +10,7 @@ import imgStory01 from "../../public/img/about-special-img-01.jpg";
 import imgStory02 from "../../public/img/about-special-img-02.jpg";
 import imgStory03 from "../../public/img/about-special-img-03.jpg";
 import imgMenuHighlight from "../../public/img/about-menu-highlight.jpg";
+
 export const metadata = {
   title: "About Sampan House (舢舨屋) | Authentic Malaysian Restaurant in Kuching",
   description:
@@ -82,8 +81,6 @@ export default function About() {
 
   return (
     <>
-      <Header />
-
       {/* Injecting JSON-LD */}
       <script
         id="restaurant-schema"
@@ -214,7 +211,6 @@ export default function About() {
       </section>
 
       <ContactSection />
-      <Footer />
 
       <Script src="/script.js" strategy="afterInteractive" />
     </>

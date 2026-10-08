@@ -1,9 +1,7 @@
 // app/contact/page.js
 import Script from "next/script";
-import Header from "../../components/Header";
-import ContactForm from "../../components/ContactForm";
-import Footer from "../../components/Footer";
-import ContactSection from "../../components/ContactSection";
+import ContactForm from "../../components/contact/ContactForm";
+import ContactSection from "../../components/shared/ContactSection";
 
 export const metadata = {
   title: "Contact Us | 舢舨屋 Sampan House - Restaurant Venue in Kuching",
@@ -63,8 +61,6 @@ export default function Contact() {
 
   return (
     <>
-      <Header />
-
       {/* Injecting JSON-LD */}
       <script
         id="restaurant-schema"
@@ -81,7 +77,6 @@ export default function Contact() {
       </section>
 
       <ContactSection />
-      <Footer />
 
       <Script src="/script.js" strategy="afterInteractive" />
     </>

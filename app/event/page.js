@@ -2,9 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import ContactSection from "../../components/ContactSection";
+import ContactSection from "../../components/shared/ContactSection";
 import imgEvent1 from "../../public/img/event-img-01.jpg";
 import imgEvent2 from "../../public/img/event-img-02.jpg";
 import imgEvent3 from "../../public/img/event-img-03.jpg";
@@ -81,8 +79,6 @@ Thank you.`;
 
   return (
     <>
-      <Header />
-
       {/* Injecting JSON-LD */}
       <script
         id="restaurant-schema"
@@ -150,7 +146,6 @@ Thank you.`;
       </section>
 
       <ContactSection />
-      <Footer />
 
       <Script src="/script.js" strategy="afterInteractive" />
     </>

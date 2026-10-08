@@ -2,11 +2,11 @@ backend:
   name: github
   repo: valarie-lim/sampan.house
   branch: main
-  base_url: https://sampan-house.vercel.app 
+  base_url: https://sampan-house.vercel.app
   auth_endpoint: api/auth
 
-media_folder: "public/menu" 
-public_folder: "/menu"      
+media_folder: "public/menu"
+public_folder: "/menu"
 
 collections:
   - name: "restaurant_menu"
