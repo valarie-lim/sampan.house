@@ -6,7 +6,7 @@ export default function Footer() {
       <p>© 2026 Sampan Jaya Sdn Bhd (1575187-A). All Rights Reserved. </p>
       <p>
         Mockup Design Site by{" "}
-        <a href="https://valarie-lim.com" target="_blank" rel="noreferrer">
+        <a href="https://valarie-lim.vercel.app" target="_blank" rel="noreferrer">
           VL Digital Solutions
         </a>
         .
