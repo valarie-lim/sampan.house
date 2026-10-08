@@ -7,7 +7,7 @@ export default function Footer() {
       <p>
         Mockup Design Site by{" "}
         <a href="https://valarie-lim.vercel.app" target="_blank" rel="noreferrer">
-          VL Digital Solutions
+          Valarie Lim
         </a>
         .
       </p>
