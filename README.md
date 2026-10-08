@@ -19,6 +19,7 @@ https://sampan-house.vercel.app
 ## Website Preview
 
 ![Home](screenshots/home-page.webp)
+![Admin](screenshots/admin-page.webp)
 
 ---
 
