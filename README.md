@@ -1,4 +1,5 @@
 # My Portfolio
+
 ![Framework](https://img.shields.io/badge/Framework-Next.js-black)
 ![Frontend](https://img.shields.io/badge/Frontend-React-blue)
 ![Language](https://img.shields.io/badge/Language-JavaScript-yellow)
@@ -16,11 +17,13 @@ https://sampan-house.vercel.app
 ---
 
 ## Website Preview
-![Home](screenshots/home-page.png)
+
+![Home](screenshots/home-page.webp)
 
 ---
 
-## Project Overview 
+## Project Overview
+
 This website was developed as a junior web development project for Sampan House.
 
 The main purpose of the website is to provide customers with an easy way to learn more about the restaurant and access important restaurant information online.
@@ -39,6 +42,7 @@ The project also includes a simple CMS setup that allows the restaurant menu PDF
 ---
 
 ## Key Features
+
 - Restaurant homepage
 - About Sampan House page
 - Food menu page
@@ -56,7 +60,9 @@ The project also includes a simple CMS setup that allows the restaurant menu PDF
 ---
 
 ## Technologies Used
+
 ### Frontend
+
 - Next.js
 - React
 - JavaScript
@@ -65,22 +71,25 @@ The project also includes a simple CMS setup that allows the restaurant menu PDF
 - Next.js App Router
 
 ### Content Management
+
 - DECAP CMS
 - GitHub
 - OAuth 2.0
 
-
 ### Development Tools
+
 - Visual Studio Code
 - Git
 - GitHub
 
 ### Deployment
+
 - Vercel
 
 ---
 
 ## Project Structure
+
 The project uses the Next.js App Router and separates pages, reusable components, static assets, and CMS configuration.
 
 ```
@@ -160,25 +169,27 @@ The app folder contains the main Next.js pages and application layout. Reusable 
 ---
 
 ## Development
+
 The website was developed using Next.js and React and is designed to be deployed using Vercel.
 
 To run the project locally, clone the repository and install the required packages.
 
 1. Clone the Repository
-git clone https://github.com/valarie-lim/sampan.house
+   git clone https://github.com/valarie-lim/sampan.house
 2. Open the Project Folder
-cd sampan.house
+   cd sampan.house
 3. Install Dependencies
-npm install
+   npm install
 4. Start the Development Server
-npm run dev
+   npm run dev
 
-The website will then be available on the local development server at: 
+The website will then be available on the local development server at:
 http://localhost:3000
 
 ---
 
 ## Build for Production
+
 To create a production build:
 npm run build
 
@@ -188,7 +199,9 @@ npm start
 ---
 
 ## Responsive Design
+
 The website is designed to work across different screen sizes, including:
+
 - Desktop
 - Laptop
 - Tablet
@@ -199,6 +212,7 @@ Responsive styling helps provide a consistent and accessible user experience acr
 ---
 
 ## Content Management
+
 The website uses Decap CMS to provide a simple way for the restaurant to update the menu PDF.
 
 The CMS is configured within the website and uses OAuth 2.0 authentication to provide authenticated access to the CMS.
@@ -208,7 +222,9 @@ This allows the client to manage the menu without needing to modify the website 
 ---
 
 ## What I Learned
+
 Through this project, I gained practical experience in:
+
 - Developing a website using Next.js
 - Using React components
 - Creating pages with the Next.js App Router
@@ -226,7 +242,9 @@ Through this project, I gained practical experience in:
 ---
 
 ## Future Improvements
+
 Some possible improvements for the website include:
+
 - Improve mobile responsive design
 - Improve animations and interactions
 - Add more restaurant information
@@ -239,5 +257,6 @@ Some possible improvements for the website include:
 ---
 
 ## Author
+
 Valarie Lim  
 Diploma in Information Technology
